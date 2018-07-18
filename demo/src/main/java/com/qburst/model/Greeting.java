@@ -1,6 +1,8 @@
 package com.qburst.model;
 
-public class Greeting {
+import java.io.Serializable;
+
+public class Greeting implements Serializable {
     private String msg;
 
     public Greeting(String msg) {
