@@ -1,5 +1,14 @@
 <Html>
 <body>
-<h2 th:text="${msg}">This is home.</h2>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>City</th>
+    </tr>
+    <tr th:each="city : ${cities}" >
+        <td  th:text="${city.id}"></td>
+        <td  th:text="${city.name}"></td>
+    </tr>
+</table>
 </body>
 </Html>
